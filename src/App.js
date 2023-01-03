@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Ask from './pages/Ask';
+import Comments from './pages/Comments';
+import HackerNews from './pages/HackerNews';
+import Jobs from './pages/Jobs';
+import Login from './pages/Login';
+import New from './pages/New';
+import Past from './pages/Past';
+import Show from './pages/Show';
+import Submit from './pages/Submit';
+import Menu from './components/Menu'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+const App = () => {
+
+  return(
+    <div className='app'>
+      <Menu />
+      <Routes >
+        <Route path="/" element={ <HackerNews /> } />
+        <Route path="/new" element={ <New /> } />
+        <Route path="/past" element={ <Past /> } />
+        <Route path="/comments" element={ <Comments /> } />
+        <Route path="/ask" element={ <Ask /> } />
+        <Route path="/show" element={ <Show /> } />
+        <Route path="/jobs" element={ <Jobs /> } />
+        <Route path="/submit" element={ <Submit /> } />
+        <Route path="/login" element={ <Login /> } />
+
+      </Routes>
     </div>
-  );
+  )
 }
 
 export default App;
+
