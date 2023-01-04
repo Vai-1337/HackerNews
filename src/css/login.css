@@ -1,0 +1,24 @@
+.login {
+    padding: 40px;
+    background-color: rgb(238, 231, 231);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    margin: auto;
+    
+}
+
+label {
+    display: flex;
+    margin: auto;
+    text-align: center;
+    width: 72px;
+}
+
+input {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    padding: 0;
+}
