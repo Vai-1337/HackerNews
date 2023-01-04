@@ -9,8 +9,8 @@ import New from './pages/New';
 import Past from './pages/Past';
 import Show from './pages/Show';
 import Submit from './pages/Submit';
-import Menu from './components/Menu'
-
+import Menu from './components/Menu';
+import './App.css';
 
 const App = () => {
 

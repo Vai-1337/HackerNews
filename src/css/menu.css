@@ -1,5 +1,7 @@
 .menu {
-    background-color: darkkhaki;
+    background-color: rgb(32, 32, 29);
+    
+    
 }
 
 ul {
@@ -7,9 +9,20 @@ ul {
     display: flex;
     justify-content: space-between;
     padding: 20px;
+    color:white
     
 }
 
 li {
     cursor: pointer;
+   
+}
+
+a {
+    text-decoration: none;
+    
+}
+
+.navlink {
+    color: white;    
 }

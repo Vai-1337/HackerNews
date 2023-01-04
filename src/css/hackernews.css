@@ -1,3 +1,21 @@
 .hackernews{
-    background-color: aqua;
+    background-color: rgb(180, 189, 189);
+    padding: 20px;    
 }
+
+p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.searchbutton {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  input {
+    width: 200px;
+    height: 25px;
+  }
