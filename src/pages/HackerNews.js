@@ -60,7 +60,7 @@ const HackerNews = () => {
       }}>Next Page</button>
       <br />
       <select value={hitsPerPage} onChange={handleChangePage}>
-        <option value={""}>select</option>
+        <option value={0}>0</option>
         <option value={5}>5</option>
         <option value={10}>10</option>
         <option value={15}>15</option>
