@@ -7,16 +7,16 @@ const HackerNews = () => {
   //state, data
   const [articles, setArticles] = useState([]);
   const [search, setSearch] = useState([]);
-  const [page, setPage] = useState(0);  
+  const [page, setPage] = useState(1);  
   const [hitsPerPage, sethitsPerPage] = useState(0);
  
   useEffect(() => {
     fetchData()
-  }, [search, page, hitsPerPage])
+  }, [page, hitsPerPage])
  
   const fetchData = async () => {
    await axios
-      .get(`http://hn.algolia.com/api/v1/search?query=${search}&page=${page}&hitsPerPage=${hitsPerPage}`)
+      .get(`https://hn.algolia.com/api/v1/search?query=${search}&page=${page}&hitsPerPage=${hitsPerPage}`)
       .then((response) => setArticles(response.data.hits))
       .catch((error) => {
         console.error(error);
