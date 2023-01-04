@@ -12,7 +12,7 @@ const HackerNews = () => {
  
   useEffect(() => {
     fetchData()
-  }, [page, hitsPerPage])
+  }, [page])
  
   const fetchData = async () => {
    await axios
