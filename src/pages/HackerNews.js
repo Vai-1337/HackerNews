@@ -42,7 +42,7 @@ const HackerNews = () => {
 
       {articles.map((article) => (
         <div key={article.objectID}>
-          <p>{article.title}</p>
+          <p> Title : {`title is : ${article.title}`}</p>
           <a href={article.url}>{article.url}</a>
         </div>
       ))}
