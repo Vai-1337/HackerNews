@@ -96,12 +96,14 @@ const HackerNews = () => {
           setPage(page + 1);
         }}
       ></input>
-      <button onClick={() => setSorted(!sorted)}>{sorted ? 'ordre original' : 'ordre alphabétique'}</button>
+      <button onClick={() => setSorted(!sorted)}>
+        {sorted ? "ordre original" : "ordre alphabétique"}
+      </button>
       <br />
 
       {(sorted ? sortedArticles : articles).map((article, index) => (
         <div key={article.objectID}>
-          <Link to="/comments">
+          <Link to="/comments/">
             <ul>
               <li>
                 {index + 1}
@@ -113,10 +115,9 @@ const HackerNews = () => {
             </ul>
           </Link>
           {/* <a href={article.url}>{article.url}</a> */}
-          
         </div>
       ))}
-      <button onClick={() => setPage(page+ 1)}>Page suivante</button>
+      <button onClick={() => setPage(page + 1)}>Page suivante</button>
     </div>
   );
 };

@@ -1,36 +1,24 @@
-import { useEffect, useState, useParams } from 'react'
-import '../css/comments.css'
-import axios from 'axios';
+import { useParams } from "react-router-dom";
+import { useEffect, useState } from "react";
+import axios from "axios";
 
-const Comments = () => {
+export default function Comments() {
+  const { objectID } = useParams();  
 
-    // const [articles, setArticles] = useState([]);
-    // const { objectID } = useParams()
-    // ;
-    
+  useEffect(() => {
+    fetchArticle();
+  }, [objectID]);
 
-    // const fetchData = async () => {
-    //     await axios
-    //       .get(
-    //         `https://hn.algolia.com/api/v1/search?query=&page=&hitsPerPage=&id=${objectID}`
-    //       )
-    //       .then((response) => setArticles(response.data.hits))
-    //       .catch((error) => {
-    //         console.error(error);
-    //       });
-    //   };
+  const fetchArticle = async () => {
+    const result = await axios.get(
+      `http://hn.algolia.com/api/v1/items/${objectID}`
+    );
+    console.log(result.data);
+  };
 
-
-    return(
-        <div className='comments'>
-            <h1>Comments</h1>
-            {/* {articles.map((article) => (
-        <div key={article.objectID}>
-          <p> {article.title}</p>          
-        </div>
-        ))} */}
-        </div>
-    )
+  return (
+    <div style={{ background: "grey" }}>        
+      <h1>Comments </h1>     
+    </div>
+  );
 }
-
-export default Comments;
