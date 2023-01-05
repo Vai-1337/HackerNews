@@ -1,5 +1,5 @@
 .hackernews{
-    background: linear-gradient(to right, rgb(41, 39, 39), rgb(212, 160, 64), rgb(95, 160, 245),rgb(172, 172, 22), rgb(41, 39, 39));
+    background: linear-gradient(to right, rgb(255, 253, 253), rgb(212, 160, 64), rgb(95, 160, 245), rgb(15, 35, 116));
     padding: 10px;    
     border-radius: 30px 30px 30px 30px;
 }
@@ -10,9 +10,9 @@ p {
 }
 
 .select {
-    margin: 10px;
+    margin: 20px;
     display: flex;  
-    justify-content: center;   
+    justify-content: center;
   }  
 
   .input-group {
@@ -63,17 +63,26 @@ p {
       color: white;
       font-size: 14px;
       cursor: pointer;
-      transition: background-color .3s ease-in-out;
-      margin: auto;
-      font-style: italic;
+      transition: background-color .3s ease-in-out;      
       margin: 0;
-      margin-left: 40px;
+      font-style: italic;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      
+      
       
     }
 
     .nextPage:hover {
       color:#07c5fa;
-      background:black
+      background:black;
+      font-weight:bold;
+    }
+
+    option {
+      font-size: 20px;
     }
 
   

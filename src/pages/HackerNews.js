@@ -75,7 +75,8 @@ const HackerNews = () => {
           </select>
           <br />
       </div>
-      <input className="nextPage" value="Next Page" type="submit" onClick={() => {setPage(page + 1)}}></input>     
+      <input className="nextPage" value="Next Page" type="submit" onClick={() => {setPage(page + 1)}}></input>   
+      <br/>  
 
       {articles.map((article) => (
         <div key={article.objectID}>
