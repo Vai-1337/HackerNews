@@ -27,7 +27,6 @@ const App = () => {
         <Route path="/jobs" element={ <Jobs /> } />
         <Route path="/submit" element={ <Submit /> } />
         <Route path="/" element={ <Login /> } />
-
       </Routes>
     </div>
   )
