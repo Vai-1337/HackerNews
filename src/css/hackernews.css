@@ -1,6 +1,7 @@
 .hackernews{
-    background-color: rgb(37, 43, 43);
+    background: linear-gradient(to right, rgb(41, 39, 39), rgb(133, 105, 53), rgb(148, 148, 39),rgb(104, 104, 213), rgb(58, 86, 164));
     padding: 10px;    
+    border-radius: 10px;
 }
 
 p {
@@ -11,7 +12,7 @@ p {
 .select {
     margin: 10px;
     display: flex;  
-    justify-content: center;       
+    justify-content: center;   
   }  
 
   .input-group {
@@ -22,26 +23,27 @@ p {
   }
   .input {
     margin: 0;
-    min-height: 28px;
+    min-height: 27px;
     max-width: 150px;
     padding: 0 1rem;
-    color: #fff;
-    font-size: 15px;
-    border: 1px solid #5e4dcd;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    border: 1px solid black;
     border-radius: 6px 0 0 6px;
-    background-color: rgb(238, 215, 215);
+    background-color: rgb(238, 205, 205)
   }
 
   .button--submit {
     margin: 0;
-    min-height: 30px;
+    min-height: 29px;
     width: 60px;
     padding: .3em 1em;
     border: none;
     border-radius: 0 6px 6px 0;
-    background-color: #5e4dcd;
-    color: white;
+    background-color: black;
+    color: #07c5fa;
     font-size: 15px;
+    font-weight: bold;
     cursor: pointer;
     transition: background-color .3s ease-in-out;
   }

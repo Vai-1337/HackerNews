@@ -9,7 +9,7 @@ const Menu = () => {
     return(
         <div className="menu">
             <ul>
-                <li><NavLink className={({ isActive }) => (isActive ? "activeLink" : "navlink")}  to="/">Hacker News</NavLink> </li>
+                <li><NavLink className={({ isActive }) => (isActive ? "activeLink" : "navlink")}  to="/hackerNews">Hacker News</NavLink> </li>
                 <li><NavLink className={({ isActive }) => (isActive ? "activeLink" : "navlink")}  to="/new">new</NavLink> </li>
                 <li><NavLink className={({ isActive }) => (isActive ? "activeLink" : "navlink")}  to="/past">past</NavLink></li>
                 <li><NavLink className={({ isActive }) => (isActive ? "activeLink" : "navlink")}  to="/comments">comments</NavLink></li>
@@ -17,7 +17,7 @@ const Menu = () => {
                 <li><NavLink className={({ isActive }) => (isActive ? "activeLink" : "navlink")}  to='/show'>show</NavLink> </li>
                 <li><NavLink className={({ isActive }) => (isActive ? "activeLink" : "navlink")}  to='/jobs'>jobs</NavLink> </li>
                 <li><NavLink className={({ isActive }) => (isActive ? "activeLink" : "navlink")}  to='/submit'>submit</NavLink> </li>
-                <li><NavLink className={({ isActive }) => (isActive ? "activeLink" : "navlink")}  to='/login'>login</NavLink> </li>
+                <li><NavLink className={({ isActive }) => (isActive ? "activeLink" : "navlink")}  to='/'>login</NavLink> </li>
             </ul>
         </div>
     )

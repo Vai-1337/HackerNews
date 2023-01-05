@@ -18,7 +18,7 @@ const App = () => {
     <div className='app'>
       <Menu />
       <Routes >
-        <Route path="/" element={ <HackerNews /> } />
+        <Route path="/hackerNews" element={ <HackerNews /> } />
         <Route path="/new" element={ <New /> } />
         <Route path="/past" element={ <Past /> } />
         <Route path="/comments" element={ <Comments /> } />
@@ -26,7 +26,7 @@ const App = () => {
         <Route path="/show" element={ <Show /> } />
         <Route path="/jobs" element={ <Jobs /> } />
         <Route path="/submit" element={ <Submit /> } />
-        <Route path="/login" element={ <Login /> } />
+        <Route path="/" element={ <Login /> } />
 
       </Routes>
     </div>
