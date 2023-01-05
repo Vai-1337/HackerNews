@@ -1,5 +1,6 @@
 .menu {
-    background-color: rgb(32, 32, 29);
+    background-color:black;
+    animation: gradient 5s linear infinite;
     
     
 }
@@ -14,8 +15,7 @@ ul {
 }
 
 li {
-    cursor: pointer;
-   
+    cursor: pointer;   
 }
 
 a {
@@ -25,4 +25,12 @@ a {
 
 .navlink {
     color: white;    
+}
+
+.activeLink {
+    font-weight: bold;
+    font-size: 120%;
+    color: #07c5fa;
+    border: 1px solid #07c5fa;
+    padding:10px
 }
